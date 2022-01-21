@@ -1,4 +1,4 @@
-
+<!-- 请看第96行 -->
 <!doctype html>
 <html lang="zh-cmn-Hans">
 	<head>
@@ -15,31 +15,40 @@
 		integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
 		crossorigin="anonymous"
 		/>
-		<title>服务器实时状态 凌空城online</title>
+		
+		<!-- 这个是浏览器标签显示的字 -->
+		<title>服务器实时状态-Mr.Hacker</title>
 	</head>
 	<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
 	
-		<!-- MDUI header -->
+		<!-- 调用MDUI -->
 		<div class="mdui-appbar">
 			<div class="mdui-toolbar mdui-color-theme">
-				<a href="//fatda.cn" class="mdui-typo-headline mdui-hidden-xs" one-link-mark="yes">凌空城online</a>
+			
+			<!-- 这个是导航栏显示的字 -->
+				<a href="//fatda.cn" class="mdui-typo-headline mdui-hidden-xs" one-link-mark="yes">Mr.Hacker</a>
 				<a class="mdui-typo-title" one-link-mark="yes">服务器实时状态</a>
 				<div class="mdui-toolbar-spacer"></div>
-				<a href="https://lingkong.online" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '凌空城online'}" one-link-mark="yes">
+				
+				<!-- 这里填写服务器官网，请自行取消注释
+				<a href="服务器官网" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '官网'}" one-link-mark="yes">
 				<i class="mdui-icon material-icons">&#xe873;</i>
 				</a>
-				<a href="https://jq.qq.com/?_wv=1027&k=Ba72ThBS" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'QQ群'}" one-link-mark="yes">
+				 -->
+				 
+				<!-- 这里填QQ群的加群链接 -->
+				<a href="加群链接" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'QQ群'}" one-link-mark="yes">
 				<i class="mdui-icon material-icons">&#xe87c;</i>
 				</a>
 			</div>
 		</div>
 	
-		<!-- MDUI boder -->
 		<div class="mdui-container doc-container" style="height: auto !important;">
 
 			<br><br><br>
 			<div class="mdui-typo">
-				
+			
+				<!-- 显示的东西，最好不要改 -->
 				<div class="mdui-table-fluid">
 					<table class="mdui-table">
 						<tbody>
@@ -86,17 +95,21 @@
 		<div class="mdui-color-theme">
 			<div class="mdui-container">
 				<br>
-				<p class="mdui-center"><strong>© 2021. 凌空城online. All copyrights reserved.</strong></p>
-				<br>
-				<p class="mdui-center"><strong>© 2021. 云峰工作室. All copyrights reserved.</strong></p>
+				
+				<!-- 版权标识 -->
+				<p class="mdui-center"><strong>© 2021. Mr.Hacker. All copyrights reserved.</strong></p>
 				<br>
 			</div>
 		</div>
-			<!-- AJAX JavaScript -->
+		
+			<!-- AJAX JS -->
 <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+
+<!-- 这就是API获取的信息，修改服务器IP和服务器端口即可 -->
 <script type="text/javascript">
 var getting = {
-	url:'https://motdpe.blackbe.xyz/api.php?ip=play.lingkong.online&port=1701',
+	url:'https://motdpe.blackbe.xyz/api.php?ip=服务器IP&port=服务器端口',
+	<!-- 底下是获取的内容信息，不要去动 -->
 	dataType:'json',
 	success:function(res) {
 		console.log(res);
@@ -129,7 +142,7 @@ var getting = {
 };
 window.setInterval(function(){$.ajax(getting)},1000);
 </script>
-			<!-- MDUI JavaScript -->
+			<!-- MDUI JS -->
 		<script
 		src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
 		integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
