@@ -22,7 +22,7 @@
 	
 		<!-- 调用MDUI -->
 		<div class="mdui-appbar">
-			<div class="mdui-toolbar mdui-color-theme">
+			<div class="mdui-toolbar mdui-color-light-green-200">
 			
 			<!-- 这个是导航栏显示的字 -->
 				<a href="//fatda.cn" class="mdui-typo-headline mdui-hidden-xs" one-link-mark="yes">Mr.Hacker</a>
@@ -41,47 +41,60 @@
 				</a>
 			</div>
 		</div>
-	
+				<!-- 显示的东西，最好不要改 -->
 		<div class="mdui-container doc-container" style="height: auto !important;">
-
 			<br><br><br>
 			<div class="mdui-typo">
-			
-				<!-- 显示的东西，最好不要改 -->
 				<div class="mdui-table-fluid">
 					<table class="mdui-table">
 						<tbody>
 							<tr>
 								<td>服务器名称</td>
-								<td><div class="mdui-typo-title" id="motd">等待加载</div></td>
+								<td><div class="mdui-typo-title" id="motd">n/a</div></td>
 							</tr>
 							<tr>
 								<td>IP</td>
-								<td><div class="mdui-typo-title" id="ip">等待加载</div></td>
+								<td><div class="mdui-typo-title" id="ip">n/a</div></td>
 							</tr>
 							<tr>
 								<td>端口</td>
-								<td><div class="mdui-typo-title" id="port">等待加载</div></td>
-							</tr>					
-							<tr>
-								<td>服务器版本</td>
-								<td><div class="mdui-typo-title" id="version">等待加载</div></td>
+								<td><div class="mdui-typo-title" id="port">n/a</div></td>
 							</tr>
 							<tr>
 								<td>服务器状态</td>
-								<td><div class="mdui-typo-title" id="status">等待加载</div></td>
+								<td><div class="mdui-typo-title" id="status">n/a</div></td>
 							</tr>						
+
 							<tr>
-								<td>协议版本</td>
-								<td><div class="mdui-typo-title" id="agreement">等待加载</div></td>
+								<td>服务器版本</td>
+								<td><div class="mdui-typo-title" id="version">n/a</div></td>
 							</tr>
 							<tr>
 								<td>在线人数</td>
-								<td><div class="mdui-typo-title"><small id="online">等待加载</small>/<small id="max">等待加载</small></div></td>
+								<td><div class="mdui-typo-title" id="online">n/a</small></div></td>
+							</tr>
+						</tbody>
+				</table>
+		        </div>
+	            </div>
+				</div><br>
+	<div class="mdui-divider"></div><br>
+		<div class="mdui-container doc-container" style="height: auto !important;">
+			<div class="mdui-typo">
+				<div class="mdui-table-fluid mdui-valign">
+					<table class="mdui-table">
+						<tbody>
+ 							<tr>
+								<td>协议版本</td>
+								<td><div class="mdui-typo-title" id="agreement">n/a</div></td>
+							</tr>
+							<tr>
+								<td>最大人数</td>
+								<td><div class="mdui-typo-title" id="max">n/a</small></div></td>
 							</tr>
 							<tr>
 								<td>有效延时</td>
-								<td><div class="mdui-typo-title" id="delay">等待加载</div>ms</td>
+								<td><div class="mdui-typo-title" id="delay">n/a</div>ms</td>
 							</tr>						
 						</tbody>
 				</table>
@@ -91,7 +104,7 @@
 				
 				<br><br><br><br><br><br><br><br><br><br><br><br>
       
-		<div class="mdui-color-theme">
+		<div class="mdui-color-blue-grey-50">
 			<div class="mdui-container">
 				<br>
 				
@@ -107,7 +120,7 @@
 <!-- 这就是API获取的信息，修改服务器IP和服务器端口即可 -->
 <script type="text/javascript">
 var getting = {
-	url:'https://motdpe.blackbe.xyz/api.php?ip=服务器IP&port=服务器端口',
+	url:'https://motdpe.blackbe.xyz/api?host=45.125.46.117:51190',
 	<!-- 底下是获取的内容信息，不要去动 -->
 	dataType:'json',
 	success:function(res) {
